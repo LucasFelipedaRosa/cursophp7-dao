@@ -30,10 +30,9 @@
 	//$usuario->update("julia123","lucas123");
 	//echo $usuario;
 
+	//deleta um usuario
 	$usuario = new Usuario();
-
 	$usuario->loadById(10);
 	$usuario->delete();
-
 	echo $usuario;
 ?>
