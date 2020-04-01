@@ -15,11 +15,20 @@
 	//echo json_encode($search);
 
 	//autentificação de login
+	//$usuario = new Usuario();
+	//$usuario->login("Lucasw","12345");
+	//echo $usuario;
+
+	//criando um novo usuario no banco de dados
+	//$usuario = new Usuario("Julia","julia072");
+	//$usuario->insert();
+	//echo $usuario;
 
 	$usuario = new Usuario();
 
-	$usuario->login("Lucasw","12345");
+	$usuario->loadById(11);
+
+	$usuario->update("julia123","lucas123");
 
 	echo $usuario;
-
 ?>
