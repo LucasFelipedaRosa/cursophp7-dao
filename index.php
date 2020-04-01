@@ -24,11 +24,16 @@
 	//$usuario->insert();
 	//echo $usuario;
 
+	//alterar um usuario
+	//$usuario = new Usuario();
+	//$usuario->loadById(11);
+	//$usuario->update("julia123","lucas123");
+	//echo $usuario;
+
 	$usuario = new Usuario();
 
-	$usuario->loadById(11);
-
-	$usuario->update("julia123","lucas123");
+	$usuario->loadById(10);
+	$usuario->delete();
 
 	echo $usuario;
 ?>
